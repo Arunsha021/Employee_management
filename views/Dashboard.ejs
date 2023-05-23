@@ -1,0 +1,101 @@
+<style>
+    .body {
+        height: 80vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .heading {
+        display: flex;
+        margin-left: 15px;
+        color: #c0392b;
+    }
+    .attributes{
+        color: #27ae60;
+    }
+
+    .maincontainer{
+        display: flex;
+        justify-content: center;
+    }
+
+    .material-icons{
+        color:red;
+    }
+</style>
+
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('select').formSelect();
+        });
+
+        $(document).ready(function () {
+            $('.timepicker').timepicker();
+        });
+
+    </script>
+    <script src="/javascripts/project.js"></script>
+</head>
+      
+<body>
+
+    <nav style="background: white">
+        <div class="nav-wrapper">
+
+            <a href="/admin/dashboard" class="brand-logo"><i
+                    style="display: flex; justify-content: top; align-items: top; font-weight: bold; ">
+                    <img src="/images/4.png" width="100px" style="border: radius 30px; padding: 10px;">
+                    <span class="heading"> <b>Employee Management</b></span></i>                    
+                      <div style="display:flex;flex-direction:row"> <span><img src='/images/<%=result.picture %>' width="60px" style="border: radius 30px; padding: 10px;"></span>
+                    <span style="font-size:22px;font-weight:bold;color:#c0392b;">[<%=result.adminname %>]</span></div>
+                    
+                         
+           
+                <ul class="right hide-on-med-and-down" >
+                    <li>
+                        <a href="/admin/logout">
+                                <span style="color: #c0392b">
+                                <abbr title="Logout">
+                               <a href="/admin/adminlogin"><i class=" large material-icons">logout</i></a> 
+                            </abbr>
+                            </span>
+                        </a>
+                    </li>
+
+
+                </ul>
+                <ul class="right hide-on-med-and-down">
+                    <li><a target="mw" href='/employee/employeeinterface'><span style="display:flex;flex-direction:row;color: blue;padding-right: 15px;"><img src="/images/addemp.png" width="60px" style="border: radius 10px; padding: bottom 5px;"><b style="font-size:18px;">Add Employees</b></span></i></a></li> 
+                    <li><a target="mw" href='/employee/display_all_employee'><span style="display:flex;flex-direction:row;color:blue;padding-right:15px"><img src="/images/disemp.png" width="60px" style="border: radius 10px; padding: bottom 5px;"><b style="font-size:18px;"> Display Employees</b></span></i></a></li>
+
+                </ul>
+            
+
+        </div>
+    </nav>
+     
+
+    <!-- employeess first page -->
+
+
+    <div class="maincontainer">
+     <iframe frameborder="0" name="mw" width="100%" height="800"></iframe>
+    </div>
+
+</body>
+
+</html>

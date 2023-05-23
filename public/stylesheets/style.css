@@ -1,0 +1,36 @@
+        
+.maincontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color: #27ae60;
+    /* height: 100vh; */
+   }
+   .box{
+     width: 800px;
+     padding: 20px;
+     background-color: #FFF;
+     border-radius: 10px;
+     }
+   
+     .tableBox{
+       width: 1200px;
+       padding:20px;
+       background-color: #FFF;
+        border-radius: 10px; 
+       }
+     .heading{
+       font-size: 22px;
+       font-weight:bold;
+       letter-spacing: 1px;
+       color:#27ae60;
+   
+     }
+   .btnstyle{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   }
+   
+   
+   
